@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:gourmand_search/src/model/gourmet.dart';
+import 'package:gourmand_search/model/gourmet.dart';
 
 void main() {
   // https://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=db3b8db8a1dd923b&lat=34.9875216&lng=135.7593744&range=1&format=json&count=2

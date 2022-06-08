@@ -2,32 +2,28 @@ import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:gourmand_search/pages/home/components/home_shop_list_view.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:http/http.dart' as http;
 
 import '../../model/gourmet.dart';
 
-class HomePage extends StatefulWidget {
+FutureProvider<List<Shops>> shopsProvider =
+    FutureProvider<List<Shops>>((ref) => searchGourmet());
+
+class HomePage extends ConsumerWidget {
   const HomePage({Key? key}) : super(key: key);
 
   @override
-  State<HomePage> createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
-  final List<Shops> shops = [];
-
-  @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final shops = ref.watch(shopsProvider);
     return Scaffold(
       appBar: AppBar(
         title: const Text('グルメリサーチ'),
         actions: [
           IconButton(
               onPressed: () async {
-                var searchShop = await searchGourmet();
-                setState(() {
-                  shops.addAll(searchShop);
-                });
+                ref.refresh(shopsProvider);
               },
               icon: const Icon(Icons.search)),
         ],
@@ -35,14 +31,7 @@ class _HomePageState extends State<HomePage> {
       body: Container(
         margin: const EdgeInsets.all(5.0),
         padding: const EdgeInsets.all(5.0),
-        child: ListView.builder(
-          itemBuilder: (context, index) {
-            return ListTile(
-              title: Text(shops[index].name),
-            );
-          },
-          itemCount: shops.length,
-        ),
+        child: const ShopListView(),
       ),
     );
   }

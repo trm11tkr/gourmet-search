@@ -20,8 +20,8 @@ Gourmet _$GourmetFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$Gourmet {
-  int get results_available => throw _privateConstructorUsedError;
-  String get results_returned => throw _privateConstructorUsedError;
+  int get resultsAvailable => throw _privateConstructorUsedError;
+  String get resultsReturned => throw _privateConstructorUsedError;
   List<Shops> get shop => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -33,7 +33,7 @@ mixin _$Gourmet {
 abstract class $GourmetCopyWith<$Res> {
   factory $GourmetCopyWith(Gourmet value, $Res Function(Gourmet) then) =
       _$GourmetCopyWithImpl<$Res>;
-  $Res call({int results_available, String results_returned, List<Shops> shop});
+  $Res call({int resultsAvailable, String resultsReturned, List<Shops> shop});
 }
 
 /// @nodoc
@@ -46,18 +46,18 @@ class _$GourmetCopyWithImpl<$Res> implements $GourmetCopyWith<$Res> {
 
   @override
   $Res call({
-    Object? results_available = freezed,
-    Object? results_returned = freezed,
+    Object? resultsAvailable = freezed,
+    Object? resultsReturned = freezed,
     Object? shop = freezed,
   }) {
     return _then(_value.copyWith(
-      results_available: results_available == freezed
-          ? _value.results_available
-          : results_available // ignore: cast_nullable_to_non_nullable
+      resultsAvailable: resultsAvailable == freezed
+          ? _value.resultsAvailable
+          : resultsAvailable // ignore: cast_nullable_to_non_nullable
               as int,
-      results_returned: results_returned == freezed
-          ? _value.results_returned
-          : results_returned // ignore: cast_nullable_to_non_nullable
+      resultsReturned: resultsReturned == freezed
+          ? _value.resultsReturned
+          : resultsReturned // ignore: cast_nullable_to_non_nullable
               as String,
       shop: shop == freezed
           ? _value.shop
@@ -73,7 +73,7 @@ abstract class _$$_GourmetCopyWith<$Res> implements $GourmetCopyWith<$Res> {
           _$_Gourmet value, $Res Function(_$_Gourmet) then) =
       __$$_GourmetCopyWithImpl<$Res>;
   @override
-  $Res call({int results_available, String results_returned, List<Shops> shop});
+  $Res call({int resultsAvailable, String resultsReturned, List<Shops> shop});
 }
 
 /// @nodoc
@@ -87,18 +87,18 @@ class __$$_GourmetCopyWithImpl<$Res> extends _$GourmetCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object? results_available = freezed,
-    Object? results_returned = freezed,
+    Object? resultsAvailable = freezed,
+    Object? resultsReturned = freezed,
     Object? shop = freezed,
   }) {
     return _then(_$_Gourmet(
-      results_available: results_available == freezed
-          ? _value.results_available
-          : results_available // ignore: cast_nullable_to_non_nullable
+      resultsAvailable: resultsAvailable == freezed
+          ? _value.resultsAvailable
+          : resultsAvailable // ignore: cast_nullable_to_non_nullable
               as int,
-      results_returned: results_returned == freezed
-          ? _value.results_returned
-          : results_returned // ignore: cast_nullable_to_non_nullable
+      resultsReturned: resultsReturned == freezed
+          ? _value.resultsReturned
+          : resultsReturned // ignore: cast_nullable_to_non_nullable
               as String,
       shop: shop == freezed
           ? _value._shop
@@ -112,8 +112,8 @@ class __$$_GourmetCopyWithImpl<$Res> extends _$GourmetCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_Gourmet implements _Gourmet {
   const _$_Gourmet(
-      {required this.results_available,
-      required this.results_returned,
+      {required this.resultsAvailable,
+      required this.resultsReturned,
       required final List<Shops> shop})
       : _shop = shop;
 
@@ -121,9 +121,9 @@ class _$_Gourmet implements _Gourmet {
       _$$_GourmetFromJson(json);
 
   @override
-  final int results_available;
+  final int resultsAvailable;
   @override
-  final String results_returned;
+  final String resultsReturned;
   final List<Shops> _shop;
   @override
   List<Shops> get shop {
@@ -133,7 +133,7 @@ class _$_Gourmet implements _Gourmet {
 
   @override
   String toString() {
-    return 'Gourmet(results_available: $results_available, results_returned: $results_returned, shop: $shop)';
+    return 'Gourmet(resultsAvailable: $resultsAvailable, resultsReturned: $resultsReturned, shop: $shop)';
   }
 
   @override
@@ -142,9 +142,9 @@ class _$_Gourmet implements _Gourmet {
         (other.runtimeType == runtimeType &&
             other is _$_Gourmet &&
             const DeepCollectionEquality()
-                .equals(other.results_available, results_available) &&
+                .equals(other.resultsAvailable, resultsAvailable) &&
             const DeepCollectionEquality()
-                .equals(other.results_returned, results_returned) &&
+                .equals(other.resultsReturned, resultsReturned) &&
             const DeepCollectionEquality().equals(other._shop, _shop));
   }
 
@@ -152,8 +152,8 @@ class _$_Gourmet implements _Gourmet {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(results_available),
-      const DeepCollectionEquality().hash(results_returned),
+      const DeepCollectionEquality().hash(resultsAvailable),
+      const DeepCollectionEquality().hash(resultsReturned),
       const DeepCollectionEquality().hash(_shop));
 
   @JsonKey(ignore: true)
@@ -169,16 +169,16 @@ class _$_Gourmet implements _Gourmet {
 
 abstract class _Gourmet implements Gourmet {
   const factory _Gourmet(
-      {required final int results_available,
-      required final String results_returned,
+      {required final int resultsAvailable,
+      required final String resultsReturned,
       required final List<Shops> shop}) = _$_Gourmet;
 
   factory _Gourmet.fromJson(Map<String, dynamic> json) = _$_Gourmet.fromJson;
 
   @override
-  int get results_available => throw _privateConstructorUsedError;
+  int get resultsAvailable => throw _privateConstructorUsedError;
   @override
-  String get results_returned => throw _privateConstructorUsedError;
+  String get resultsReturned => throw _privateConstructorUsedError;
   @override
   List<Shops> get shop => throw _privateConstructorUsedError;
   @override
@@ -197,7 +197,8 @@ mixin _$Shops {
   String get address => throw _privateConstructorUsedError;
   String get access => throw _privateConstructorUsedError;
   String get open => throw _privateConstructorUsedError;
-  String get logo_image => throw _privateConstructorUsedError;
+  String get logoImage => throw _privateConstructorUsedError;
+  Photo get photo => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -213,7 +214,10 @@ abstract class $ShopsCopyWith<$Res> {
       String address,
       String access,
       String open,
-      String logo_image});
+      String logoImage,
+      Photo photo});
+
+  $PhotoCopyWith<$Res> get photo;
 }
 
 /// @nodoc
@@ -230,7 +234,8 @@ class _$ShopsCopyWithImpl<$Res> implements $ShopsCopyWith<$Res> {
     Object? address = freezed,
     Object? access = freezed,
     Object? open = freezed,
-    Object? logo_image = freezed,
+    Object? logoImage = freezed,
+    Object? photo = freezed,
   }) {
     return _then(_value.copyWith(
       name: name == freezed
@@ -249,11 +254,22 @@ class _$ShopsCopyWithImpl<$Res> implements $ShopsCopyWith<$Res> {
           ? _value.open
           : open // ignore: cast_nullable_to_non_nullable
               as String,
-      logo_image: logo_image == freezed
-          ? _value.logo_image
-          : logo_image // ignore: cast_nullable_to_non_nullable
+      logoImage: logoImage == freezed
+          ? _value.logoImage
+          : logoImage // ignore: cast_nullable_to_non_nullable
               as String,
+      photo: photo == freezed
+          ? _value.photo
+          : photo // ignore: cast_nullable_to_non_nullable
+              as Photo,
     ));
+  }
+
+  @override
+  $PhotoCopyWith<$Res> get photo {
+    return $PhotoCopyWith<$Res>(_value.photo, (value) {
+      return _then(_value.copyWith(photo: value));
+    });
   }
 }
 
@@ -267,7 +283,11 @@ abstract class _$$_ShopsCopyWith<$Res> implements $ShopsCopyWith<$Res> {
       String address,
       String access,
       String open,
-      String logo_image});
+      String logoImage,
+      Photo photo});
+
+  @override
+  $PhotoCopyWith<$Res> get photo;
 }
 
 /// @nodoc
@@ -285,7 +305,8 @@ class __$$_ShopsCopyWithImpl<$Res> extends _$ShopsCopyWithImpl<$Res>
     Object? address = freezed,
     Object? access = freezed,
     Object? open = freezed,
-    Object? logo_image = freezed,
+    Object? logoImage = freezed,
+    Object? photo = freezed,
   }) {
     return _then(_$_Shops(
       name: name == freezed
@@ -304,10 +325,14 @@ class __$$_ShopsCopyWithImpl<$Res> extends _$ShopsCopyWithImpl<$Res>
           ? _value.open
           : open // ignore: cast_nullable_to_non_nullable
               as String,
-      logo_image: logo_image == freezed
-          ? _value.logo_image
-          : logo_image // ignore: cast_nullable_to_non_nullable
+      logoImage: logoImage == freezed
+          ? _value.logoImage
+          : logoImage // ignore: cast_nullable_to_non_nullable
               as String,
+      photo: photo == freezed
+          ? _value.photo
+          : photo // ignore: cast_nullable_to_non_nullable
+              as Photo,
     ));
   }
 }
@@ -320,7 +345,8 @@ class _$_Shops implements _Shops {
       required this.address,
       required this.access,
       required this.open,
-      required this.logo_image});
+      required this.logoImage,
+      required this.photo});
 
   factory _$_Shops.fromJson(Map<String, dynamic> json) =>
       _$$_ShopsFromJson(json);
@@ -334,11 +360,13 @@ class _$_Shops implements _Shops {
   @override
   final String open;
   @override
-  final String logo_image;
+  final String logoImage;
+  @override
+  final Photo photo;
 
   @override
   String toString() {
-    return 'Shops(name: $name, address: $address, access: $access, open: $open, logo_image: $logo_image)';
+    return 'Shops(name: $name, address: $address, access: $access, open: $open, logoImage: $logoImage, photo: $photo)';
   }
 
   @override
@@ -350,8 +378,8 @@ class _$_Shops implements _Shops {
             const DeepCollectionEquality().equals(other.address, address) &&
             const DeepCollectionEquality().equals(other.access, access) &&
             const DeepCollectionEquality().equals(other.open, open) &&
-            const DeepCollectionEquality()
-                .equals(other.logo_image, logo_image));
+            const DeepCollectionEquality().equals(other.logoImage, logoImage) &&
+            const DeepCollectionEquality().equals(other.photo, photo));
   }
 
   @JsonKey(ignore: true)
@@ -362,7 +390,8 @@ class _$_Shops implements _Shops {
       const DeepCollectionEquality().hash(address),
       const DeepCollectionEquality().hash(access),
       const DeepCollectionEquality().hash(open),
-      const DeepCollectionEquality().hash(logo_image));
+      const DeepCollectionEquality().hash(logoImage),
+      const DeepCollectionEquality().hash(photo));
 
   @JsonKey(ignore: true)
   @override
@@ -381,7 +410,8 @@ abstract class _Shops implements Shops {
       required final String address,
       required final String access,
       required final String open,
-      required final String logo_image}) = _$_Shops;
+      required final String logoImage,
+      required final Photo photo}) = _$_Shops;
 
   factory _Shops.fromJson(Map<String, dynamic> json) = _$_Shops.fromJson;
 
@@ -394,9 +424,277 @@ abstract class _Shops implements Shops {
   @override
   String get open => throw _privateConstructorUsedError;
   @override
-  String get logo_image => throw _privateConstructorUsedError;
+  String get logoImage => throw _privateConstructorUsedError;
+  @override
+  Photo get photo => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_ShopsCopyWith<_$_Shops> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+Photo _$PhotoFromJson(Map<String, dynamic> json) {
+  return _Photo.fromJson(json);
+}
+
+/// @nodoc
+mixin _$Photo {
+  MobileImage get mobile => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $PhotoCopyWith<Photo> get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $PhotoCopyWith<$Res> {
+  factory $PhotoCopyWith(Photo value, $Res Function(Photo) then) =
+      _$PhotoCopyWithImpl<$Res>;
+  $Res call({MobileImage mobile});
+
+  $MobileImageCopyWith<$Res> get mobile;
+}
+
+/// @nodoc
+class _$PhotoCopyWithImpl<$Res> implements $PhotoCopyWith<$Res> {
+  _$PhotoCopyWithImpl(this._value, this._then);
+
+  final Photo _value;
+  // ignore: unused_field
+  final $Res Function(Photo) _then;
+
+  @override
+  $Res call({
+    Object? mobile = freezed,
+  }) {
+    return _then(_value.copyWith(
+      mobile: mobile == freezed
+          ? _value.mobile
+          : mobile // ignore: cast_nullable_to_non_nullable
+              as MobileImage,
+    ));
+  }
+
+  @override
+  $MobileImageCopyWith<$Res> get mobile {
+    return $MobileImageCopyWith<$Res>(_value.mobile, (value) {
+      return _then(_value.copyWith(mobile: value));
+    });
+  }
+}
+
+/// @nodoc
+abstract class _$$_PhotoCopyWith<$Res> implements $PhotoCopyWith<$Res> {
+  factory _$$_PhotoCopyWith(_$_Photo value, $Res Function(_$_Photo) then) =
+      __$$_PhotoCopyWithImpl<$Res>;
+  @override
+  $Res call({MobileImage mobile});
+
+  @override
+  $MobileImageCopyWith<$Res> get mobile;
+}
+
+/// @nodoc
+class __$$_PhotoCopyWithImpl<$Res> extends _$PhotoCopyWithImpl<$Res>
+    implements _$$_PhotoCopyWith<$Res> {
+  __$$_PhotoCopyWithImpl(_$_Photo _value, $Res Function(_$_Photo) _then)
+      : super(_value, (v) => _then(v as _$_Photo));
+
+  @override
+  _$_Photo get _value => super._value as _$_Photo;
+
+  @override
+  $Res call({
+    Object? mobile = freezed,
+  }) {
+    return _then(_$_Photo(
+      mobile: mobile == freezed
+          ? _value.mobile
+          : mobile // ignore: cast_nullable_to_non_nullable
+              as MobileImage,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_Photo implements _Photo {
+  const _$_Photo({required this.mobile});
+
+  factory _$_Photo.fromJson(Map<String, dynamic> json) =>
+      _$$_PhotoFromJson(json);
+
+  @override
+  final MobileImage mobile;
+
+  @override
+  String toString() {
+    return 'Photo(mobile: $mobile)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_Photo &&
+            const DeepCollectionEquality().equals(other.mobile, mobile));
+  }
+
+  @JsonKey(ignore: true)
+  @override
+  int get hashCode =>
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(mobile));
+
+  @JsonKey(ignore: true)
+  @override
+  _$$_PhotoCopyWith<_$_Photo> get copyWith =>
+      __$$_PhotoCopyWithImpl<_$_Photo>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_PhotoToJson(this);
+  }
+}
+
+abstract class _Photo implements Photo {
+  const factory _Photo({required final MobileImage mobile}) = _$_Photo;
+
+  factory _Photo.fromJson(Map<String, dynamic> json) = _$_Photo.fromJson;
+
+  @override
+  MobileImage get mobile => throw _privateConstructorUsedError;
+  @override
+  @JsonKey(ignore: true)
+  _$$_PhotoCopyWith<_$_Photo> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+MobileImage _$MobileImageFromJson(Map<String, dynamic> json) {
+  return _MobileImage.fromJson(json);
+}
+
+/// @nodoc
+mixin _$MobileImage {
+  String get l => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $MobileImageCopyWith<MobileImage> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $MobileImageCopyWith<$Res> {
+  factory $MobileImageCopyWith(
+          MobileImage value, $Res Function(MobileImage) then) =
+      _$MobileImageCopyWithImpl<$Res>;
+  $Res call({String l});
+}
+
+/// @nodoc
+class _$MobileImageCopyWithImpl<$Res> implements $MobileImageCopyWith<$Res> {
+  _$MobileImageCopyWithImpl(this._value, this._then);
+
+  final MobileImage _value;
+  // ignore: unused_field
+  final $Res Function(MobileImage) _then;
+
+  @override
+  $Res call({
+    Object? l = freezed,
+  }) {
+    return _then(_value.copyWith(
+      l: l == freezed
+          ? _value.l
+          : l // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+abstract class _$$_MobileImageCopyWith<$Res>
+    implements $MobileImageCopyWith<$Res> {
+  factory _$$_MobileImageCopyWith(
+          _$_MobileImage value, $Res Function(_$_MobileImage) then) =
+      __$$_MobileImageCopyWithImpl<$Res>;
+  @override
+  $Res call({String l});
+}
+
+/// @nodoc
+class __$$_MobileImageCopyWithImpl<$Res> extends _$MobileImageCopyWithImpl<$Res>
+    implements _$$_MobileImageCopyWith<$Res> {
+  __$$_MobileImageCopyWithImpl(
+      _$_MobileImage _value, $Res Function(_$_MobileImage) _then)
+      : super(_value, (v) => _then(v as _$_MobileImage));
+
+  @override
+  _$_MobileImage get _value => super._value as _$_MobileImage;
+
+  @override
+  $Res call({
+    Object? l = freezed,
+  }) {
+    return _then(_$_MobileImage(
+      l: l == freezed
+          ? _value.l
+          : l // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_MobileImage implements _MobileImage {
+  const _$_MobileImage({required this.l});
+
+  factory _$_MobileImage.fromJson(Map<String, dynamic> json) =>
+      _$$_MobileImageFromJson(json);
+
+  @override
+  final String l;
+
+  @override
+  String toString() {
+    return 'MobileImage(l: $l)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_MobileImage &&
+            const DeepCollectionEquality().equals(other.l, l));
+  }
+
+  @JsonKey(ignore: true)
+  @override
+  int get hashCode =>
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(l));
+
+  @JsonKey(ignore: true)
+  @override
+  _$$_MobileImageCopyWith<_$_MobileImage> get copyWith =>
+      __$$_MobileImageCopyWithImpl<_$_MobileImage>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_MobileImageToJson(this);
+  }
+}
+
+abstract class _MobileImage implements MobileImage {
+  const factory _MobileImage({required final String l}) = _$_MobileImage;
+
+  factory _MobileImage.fromJson(Map<String, dynamic> json) =
+      _$_MobileImage.fromJson;
+
+  @override
+  String get l => throw _privateConstructorUsedError;
+  @override
+  @JsonKey(ignore: true)
+  _$$_MobileImageCopyWith<_$_MobileImage> get copyWith =>
       throw _privateConstructorUsedError;
 }

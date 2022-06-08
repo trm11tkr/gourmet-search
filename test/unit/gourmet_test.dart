@@ -182,8 +182,8 @@ void main() {
     var data = json.decode(jsonData);
     Gourmet result = Gourmet.fromJson(data);
 
-    expect(result.results_available, 123);
-    expect(result.results_returned, "2");
+    expect(result.resultsAvailable, 123);
+    expect(result.resultsReturned, "2");
 
     expect(result.shop[0].name, "BBQ奉行 京都タワー店");
     expect(result.shop[1].name, "鳥せい 京都タワーサンド店");
@@ -200,9 +200,14 @@ void main() {
     expect(
         result.shop[1].open, "月～日: 11:30～22:00 （料理L.O. 21:00 ドリンクL.O. 21:30）");
 
-    expect(result.shop[0].logo_image,
+    expect(result.shop[0].logoImage,
         "https://imgfp.hotp.jp/IMGH/80/05/P037728005/P037728005_69.jpg");
-    expect(result.shop[1].logo_image,
+    expect(result.shop[1].logoImage,
         "https://imgfp.hotp.jp/IMGH/18/85/P036611885/P036611885_69.jpg");
+
+    expect(result.shop[0].photo.mobile.l,
+        "https://imgfp.hotp.jp/IMGH/46/37/P038044637/P038044637_168.jpg");
+    expect(result.shop[1].photo.mobile.l,
+        "https://imgfp.hotp.jp/IMGH/79/01/P036517901/P036517901_168.jpg");
   });
 }

@@ -40,8 +40,8 @@ class HomePage extends ConsumerWidget {
 List<Shops> parseShops(String responseBody) {
   Map<String, dynamic> data = json.decode(responseBody)['results'];
   Gourmet gourmet = Gourmet.fromJson(data);
-  int totalCount = gourmet.results_available;
-  int returnedCount = int.parse(gourmet.results_returned);
+  int totalCount = gourmet.resultsAvailable;
+  int returnedCount = int.parse(gourmet.resultsReturned);
   List<Shops> shops = gourmet.shop;
   return shops;
 }

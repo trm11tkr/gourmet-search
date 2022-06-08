@@ -32,7 +32,7 @@ class ShopListItem extends StatelessWidget {
             width: 100.0,
             height: 80.0,
             child: Image(
-              image: NetworkImage(shop.logo_image),
+              image: NetworkImage(shop.logoImage),
             ),
           ),
           Positioned(

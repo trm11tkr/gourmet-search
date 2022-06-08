@@ -34,7 +34,7 @@ class ShopListItem extends StatelessWidget {
               width: 100.0,
               height: 80.0,
               child: Image(
-                image: NetworkImage(shop.logoImage),
+                image: logoImage(shop.logoImage),
               ),
             ),
             Positioned(
@@ -82,5 +82,15 @@ class ShopListItem extends StatelessWidget {
         );
       },
     );
+  }
+}
+
+ImageProvider logoImage(String imageUrl) {
+  const String noImage =
+      "https://imgfp.hotp.jp/SYS/cmn/images/common/diary/custom/m30_img_noimage.gif";
+  if (imageUrl != noImage) {
+    return NetworkImage(imageUrl);
+  } else {
+    return const AssetImage('images/tableware.png');
   }
 }
